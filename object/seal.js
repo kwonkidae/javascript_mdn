@@ -1,8 +1,8 @@
 // 'use strict';
 (() => {
   const object1 = {
-    property1: 42
-  }
+    property1: 42,
+  };
 
   Object.seal(object1);
   object1.property1 = 33;
@@ -16,8 +16,8 @@
   // 'use strict';
   var obj = {
     prop: function() {},
-    foo: 'bar'
-  }
+    foo: 'bar',
+  };
 
   obj.foo = 'baz';
   obj.lumpy = 'woof';
@@ -38,11 +38,11 @@
   function fail() {
     // 'use strict';
     delete obj.foo;
-    obj.sparky = 'arg'
+    obj.sparky = 'arg';
   }
 
   fail();
 
   // Object.defineProperty(obj, 'ohai', { value: 17});
-  Object.defineProperty(obj, 'foo', { valaue: 'eit '});
+  Object.defineProperty(obj, 'foo', { valaue: 'eit ' });
 })();
